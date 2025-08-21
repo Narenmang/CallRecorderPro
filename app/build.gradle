@@ -1,0 +1,32 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace "com.example.callrecorderpro"
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.callrecorderpro"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.8.22"
+    implementation 'com.google.android.gms:play-services-auth:20.7.0'
+    implementation 'com.google.api-client:google-api-client:1.34.0'
+    implementation 'com.google.api-client:google-api-client-android:1.34.0'
+    implementation 'com.google.apis:google-api-services-drive:v3-rev197-1.25.0'
+}
